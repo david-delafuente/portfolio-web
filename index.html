@@ -26,8 +26,21 @@
 <body class="animate__animated animate__fadeIn">
 
     <main>
-        <!-- Hidden text-->
+
+        <head>
+
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">ES</span>
+            </div>
+
+        </head>
+
         <div class="hidden_container">
+
+            <!-- About me-->
             <div class="window animate__animated" id="w1" style="display: none;">
                 <img src="assets/icons/apple-touch-icon.png" />
                 <h1>David de la Fuente Gómez</h2>
@@ -37,20 +50,14 @@
                         Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
                         encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí estoy
                         unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.</p>
-
-                    <!-- Back button-->
-
-                    <div class="button_container animate__animated" style="display: none;">
-                        <ion-icon size="large" name="arrow-back-circle-outline" id="back_button"
-                            onclick="back()"></ion-icon>
-                    </div>
-
             </div>
-            <div class="example" id="texto2" style="display: none;">
-                <h1>Texto 2</h1>
-            </div>
-            <div class="example" id="texto3" style="display: none;">
-                <h1>Texto 3</h1>
+
+            <!-- Projects-->
+            <!-- Contact me-->
+
+            <!-- Back button-->
+            <div class="button_container animate__animated" style="display: none;">
+                <ion-icon size="large" name="arrow-back-circle-outline" id="back_button" onclick="back()"></ion-icon>
             </div>
         </div>
 
@@ -77,20 +84,13 @@
             </button>
         </div>
 
-
-
-
-
-
-
     </main>
 
     <footer class="footer_container">
         <div class="footer_content">
             <p class="copy">&copy; Copyright 2023</p>
             <p class="copy">
-                Built by
-                David de la Fuente Gómez
+                Built by David de la Fuente Gómez
             </p>
         </div>
     </footer>
