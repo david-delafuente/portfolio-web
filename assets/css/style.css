@@ -1,0 +1,180 @@
+/*web font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* Main tittle font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:wght@300;400;500&family=Tektur&display=swap');
+
+
+
+
+
+/* Variables */
+:root {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    ;
+    --font-text: "Roboto", sans-serif;
+    --font-title: 'Tektur', sans-serif;
+    --normal-font: 300;
+    --bold-font: 400;
+    --bolder-font: 500;
+    --text-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("../images/background-desktop.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 200px;
+}
+
+.image-blur {
+    backdrop-filter: blur(0.5px)
+}
+
+
+.main_title h1 {
+    margin: 10px 70px 50px 70px;
+    font-size: 60px;
+    font-family: var(--font-title);
+    color: rgb(255, 255, 255);
+}
+
+/* Different windows */
+.hidden_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.window {
+    width: 800px;
+    height: 350px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+.window p {
+
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+img {
+    margin: -60px;
+    position: relative;
+    top: -20%;
+    left: 45%;
+}
+
+/* MAGIC BUTTON*/
+.button_container {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+button p {
+    font-family: var(--font-title);
+    font-size: 15px;
+}
+
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 15px;
+}
+
+.glow-on-hover:active {
+    color: rgb(0, 0, 0);
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111fc;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Footer */
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+    /* Color de fondo para el footer */
+    padding: 20px;
+
+}

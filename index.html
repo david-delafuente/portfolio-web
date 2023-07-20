@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David de la Fuente | Portfolio | Full Stack Web Developer</title>
+    <meta name="author" content="David de la Fuente Gómez" />
+    <meta name="description"
+        content="¡Bienvenido a mi portfolio! Soy un Desarrollador Web Full Stack en proceso, con pasión por crear proyectos innovadores, aprender y mejorar mis habilidades día a día. ¡Explora mi web y contáctame!">
+    <meta name=”robots” content=”index, follow” />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+    <!--CSS Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body class="animate__animated animate__fadeIn">
+
+    <main>
+        <!-- Hidden text-->
+        <div class="hidden_container">
+            <div class="window animate__animated" id="w1" style="display: none;">
+                <img src="assets/icons/apple-touch-icon.png" />
+                <h1>David de la Fuente Gómez</h2>
+                    <p>Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
+                        encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí estoy
+                        unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.
+                        Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
+                        encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí estoy
+                        unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.</p>
+
+                    <!-- Back button-->
+
+                    <div class="button_container animate__animated" style="display: none;">
+                        <ion-icon size="large" name="arrow-back-circle-outline" id="back_button"
+                            onclick="back()"></ion-icon>
+                    </div>
+
+            </div>
+            <div class="example" id="texto2" style="display: none;">
+                <h1>Texto 2</h1>
+            </div>
+            <div class="example" id="texto3" style="display: none;">
+                <h1>Texto 3</h1>
+            </div>
+        </div>
+
+        <div class="main_title animate__animated" id="title">
+            <h1>Hi!
+                <br>
+                I'm David
+                <br>
+                Web Developer in process
+            </h1>
+        </div>
+
+
+
+        <div class="button_container animate__animated" id="buttons">
+            <button class="glow-on-hover" onclick="showElement1()">
+                <p>About me</p>
+            </button>
+            <button class="glow-on-hover" onclick="showElement2()">
+                <p>Projects</p>
+            </button>
+            <button class="glow-on-hover" onclick="showElement3()">
+                <p>Contact me</p>
+            </button>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer_container">
+        <div class="footer_content">
+            <p class="copy">&copy; Copyright 2023</p>
+            <p class="copy">
+                Built by
+                David de la Fuente Gómez
+            </p>
+        </div>
+    </footer>
+
+    <!--Website scripts-->
+    <script src="assets/js/app.js"></script>
+
+    <!--Ion icons scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
