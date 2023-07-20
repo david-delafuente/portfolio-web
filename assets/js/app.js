@@ -1,3 +1,18 @@
+//LANGUAGE BUTTON
+
+let lang_button = document.getElementById('language-toggle');
+lang_button.addEventListener('click', selectlang);
+
+function selectlang() {
+    if (lang_button.checked == true) {
+        location.href = 'ES/es-index.html';
+    } else {
+        location.href = '../index.html';
+    }
+}
+
+//SHOW HIDDEN ELEMENTS
+
 function showElement1() {
     document.body.classList.add('image-blur');
 
