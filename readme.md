@@ -36,8 +36,8 @@ A list of technologies used within the project:
 ***
 A little intro about the installation. 
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
+$ git clone https://example.com](https://github.com/david-delafuente/portfolio-web.git
+$ cd portfolio-web
 $ npm install
 $ npm start
 ```
