@@ -26,17 +26,39 @@
 <body class="animate__animated animate__fadeIn">
 
     <main>
+        <!-- MULTI LANGUAGE BUTTON -->
 
         <head>
-
             <div class="switch">
                 <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
                 <label for="language-toggle"></label>
                 <span class="on">EN</span>
                 <span class="off">ES</span>
             </div>
-
         </head>
+
+        <!-- TITLE-->
+        <div class="main_title animate__animated" id="title">
+            <h1>Hola!
+                <br>
+                Soy David
+                <br>
+                Desarrollador Web en proceso
+            </h1>
+        </div>
+
+        <!-- PAGE BUTTONS-->
+        <div class="button_container animate__animated" id="buttons">
+            <button class="glow-on-hover" onclick="showElement1()">
+                <p>Sobre mí</p>
+            </button>
+            <button class="glow-on-hover" onclick="showElement2()">
+                <p>Projectos</p>
+            </button>
+            <button class="glow-on-hover" onclick="showElement3()">
+                <p>Contáctame</p>
+            </button>
+        </div>
 
         <div class="hidden_container">
 
@@ -60,37 +82,14 @@
                 <ion-icon size="large" name="arrow-back-circle-outline" id="back_button" onclick="back()"></ion-icon>
             </div>
         </div>
-
-        <div class="main_title animate__animated" id="title">
-            <h1>Hola!
-                <br>
-                Soy David
-                <br>
-                Web Developer en proceso
-            </h1>
-        </div>
-
-
-
-        <div class="button_container animate__animated" id="buttons">
-            <button class="glow-on-hover" onclick="showElement1()">
-                <p>Sobre mí</p>
-            </button>
-            <button class="glow-on-hover" onclick="showElement2()">
-                <p>Projectos</p>
-            </button>
-            <button class="glow-on-hover" onclick="showElement3()">
-                <p>Contáctame</p>
-            </button>
-        </div>
-
     </main>
 
+    <!-- FOOTER-->
     <footer class="footer_container">
         <div class="footer_content">
             <p class="copy">&copy; Copyright 2023</p>
             <p class="copy">
-                Built by David de la Fuente Gómez
+                Desarrollado por David de la Fuente Gómez
             </p>
         </div>
     </footer>

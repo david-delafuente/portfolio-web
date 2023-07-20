@@ -27,39 +27,18 @@
 
     <main>
 
-        <head>
+        <!-- MULTI LANGUAGE BUTTON -->
 
+        <head>
             <div class="switch">
                 <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
                 <label for="language-toggle"></label>
                 <span class="on">EN</span>
                 <span class="off">ES</span>
             </div>
-
         </head>
 
-        <div class="hidden_container">
-
-            <!-- About me-->
-            <div class="window animate__animated" id="w1" style="display: none;">
-                <img src="assets/icons/apple-touch-icon.png" />
-                <h1>David de la Fuente Gómez</h2>
-                    <p>Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
-                        encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí estoy
-                        unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.
-                        Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
-                        encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí estoy
-                        unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.</p>
-            </div>
-
-            <!-- Projects-->
-            <!-- Contact me-->
-
-            <!-- Back button-->
-            <div class="button_container animate__animated" style="display: none;">
-                <ion-icon size="large" name="arrow-back-circle-outline" id="back_button" onclick="back()"></ion-icon>
-            </div>
-        </div>
+        <!-- TITLE-->
 
         <div class="main_title animate__animated" id="title">
             <h1>Hi!
@@ -70,7 +49,7 @@
             </h1>
         </div>
 
-
+        <!-- PAGE BUTTONS-->
 
         <div class="button_container animate__animated" id="buttons">
             <button class="glow-on-hover" onclick="showElement1()">
@@ -84,13 +63,40 @@
             </button>
         </div>
 
+        <div class="hidden_container">
+
+            <!-- About me-->
+            <section class="window animate__animated" id="w1" style="display: none;">
+                <div>
+                    <img src="assets/icons/apple-touch-icon.png" />
+                    <h1>David de la Fuente Gómez</h2>
+                        <p>Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
+                            encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí
+                            estoy
+                            unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.
+                            Soy de Barcelona, nací en el 1990 y soy en neócito de la programación. Recientemente decidí
+                            encaminar mi vida profesional al sector que siempre me había llamado al atención, y aquí
+                            estoy
+                            unos años después, con mi propia página web dónde mostrar al mundo, un poquito más de mí.
+                        </p>
+                </div>
+            </section>
+            <!-- Projects-->
+            <!-- Contact me-->
+
+            <!-- Back button-->
+            <div class="button_container animate__animated" style="display: none;">
+                <ion-icon size="large" name="arrow-back-circle-outline" id="back_button" onclick="back()"></ion-icon>
+            </div>
+        </div>
     </main>
 
+    <!-- FOOTER-->
     <footer class="footer_container">
         <div class="footer_content">
             <p class="copy">&copy; Copyright 2023</p>
             <p class="copy">
-                Built by David de la Fuente Gómez
+                Developed by David de la Fuente Gómez
             </p>
         </div>
     </footer>

@@ -13,35 +13,26 @@ function selectlang() {
 
 //SHOW HIDDEN ELEMENTS
 
+//Global variables
+let varBody = document.body;
+let vartitle = document.getElementById('title')
+let varButtons = document.getElementById('buttons')
+let varWindow = document.getElementById('w1');
+
 function showElement1() {
-    document.body.classList.add('image-blur');
+    varBody.classList.add('image-blur');
+    vartitle.style.display = 'none';
+    varButtons.style.display = 'none';
 
-
-    document.getElementById('title').style.display = 'none';
-    document.getElementById('buttons').style.display = 'none';
-
-
-    let varButton = document.getElementById('button_container');
-    let styleButton = varButton.style.display;
-
-    if (styleButton === 'none') {
-        document.getElementById('button_container').removeAttribute('style');
-        document.getElementById('button_container').classList.add('animate__fadeIn');
-    }
-    document.getElementById('button_container').classList.replace('animate__fadeOut', 'animate__fadeIn');
-
-
-    let varWindow = document.getElementById('w1');
     let styleWindow = varWindow.style.display;
-
     if (styleWindow === 'none') {
-        document.getElementById('w1').removeAttribute('style');
-        document.getElementById('w1').classList.add('animate__fadeIn');
+        varWindow.removeAttribute('style');
+        varWindow.classList.add('animate__fadeIn');
     }
-    document.getElementById('w1').classList.replace('animate__fadeOut', 'animate__fadeIn');
-
+    varWindow.classList.replace('animate__fadeOut', 'animate__fadeIn');
 }
 
+//continue here!!!!!!!!!!!!
 function back() {
     document.body.classList.remove('image-blur');
     document.getElementById('w1').style.display = 'none';
