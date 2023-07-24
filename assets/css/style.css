@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:wght@300;400;500&family=Tektur&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Raleway&family=Roboto:wght@300;400;500&family=Tektur&family=Ysabeau+Infant:ital,wght@0,200;1,400&display=swap');
+
 /* VARIABLES */
 :root {
     color: white;
@@ -11,6 +13,8 @@
 
     --font-text: "Roboto", sans-serif;
     --font-title: 'Tektur', sans-serif;
+    --font-ex: 'Ysabeau Infant', sans-serif;
+    --text-size: 20px;
     --normal-font: 300;
     --bold-font: 400;
     --bolder-font: 500;
@@ -150,6 +154,12 @@ main {
     color: rgb(255, 255, 255);
 }
 
+.space_line {
+    margin: 40px 0px 40px 0px;
+}
+
+
+
 /* HIDDEN CONTENTS */
 .hidden_container {
     display: flex;
@@ -158,8 +168,8 @@ main {
 }
 
 .window {
-    width: 800px;
-    height: 350px;
+    display: inline-block;
+    width: 80%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.45);
     border-radius: 10px;
@@ -167,15 +177,21 @@ main {
 
 .window p {
 
+    font-family: var(--font-ex);
+    font-size: var(--text-size);
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 
+.window p b {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 img {
-    margin: -60px;
     position: relative;
-    top: -20%;
-    left: 45%;
+    top: -10%;
+    left: 40%;
 }
 
 /* MAGIC BUTTON*/
@@ -185,6 +201,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin: 40px 0px 20px 0px;
 }
 
 button p {
@@ -257,6 +274,59 @@ button p {
 
     100% {
         background-position: 0 0;
+    }
+}
+
+/* SLIDER IMG */
+
+.gallery {
+    --d: 12s;
+    display: grid;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    height: 200px;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    animation: r var(--d) linear infinite;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.gallery>img:nth-child(2) {
+    animation-delay: calc(1*var(--d)/-6)
+}
+
+.gallery>img:nth-child(3) {
+    animation-delay: calc(2*var(--d)/-6)
+}
+
+.gallery>img:nth-child(4) {
+    animation-delay: calc(3*var(--d)/-6)
+}
+
+.gallery>img:nth-child(5) {
+    animation-delay: calc(4*var(--d)/-6)
+}
+
+.gallery>img:nth-child(6) {
+    animation-delay: calc(5*var(--d)/-6)
+}
+
+
+@keyframes r {
+    83% {
+        transform: translate(-500%)
+    }
+
+    83.01% {
+        transform: translate(100%);
+        opacity: 0;
     }
 }
 
