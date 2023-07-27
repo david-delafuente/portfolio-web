@@ -55,6 +55,12 @@ li {
     ;
 }
 
+a {
+    color: rgb(255, 132, 0);
+    text-decoration: none;
+    font-size: 25px;
+}
+
 .li_text {
     color: white;
 }
@@ -210,7 +216,6 @@ main {
 }
 
 .window p {
-    /*font-family: var(--font-ex);*/
     font-family: 'Roboto';
     font-size: var(--text-size);
     margin-bottom: 10px;
@@ -233,25 +238,89 @@ main {
 
 .text_content p {
     text-align: justify;
-    width: 80%;
-    margin-bottom: var(--margin-general);
 }
 
-.animate__animated.animate__fadeInLeft {
-    --animate-duration: 3.5s;
+.p1 {
+
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
 }
 
-.animate__animated.animate__fadeInRight {
-    --animate-duration: 3.5s;
+.p2 {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
+}
+
+.p3 {
+
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
+}
+
+.p4 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
+}
+
+.p5 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
+}
+
+.p6 {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border_img);
+}
+
+.span_project_container {
+    width: 90%;
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--margin-general);
+}
+
+.project_text {
+    padding: 20px;
+    background-color: rgba(255, 136, 0, 0.3);
+    border-radius: 30px;
+}
+
+.project_text:nth-child(1) {
+    justify-self: start;
+}
+
+.project_text:nth-child(2) {
+    justify-self: center;
+}
+
+.project_text:nth-child(3) {
+    justify-self: end;
+}
+
+.project_text:nth-child(4) {
+    justify-self: center;
+}
+
+.project_text:nth-child(5) {
+    justify-self: left;
 }
 
 .images {
-    width: 80%;
+    width: 90%;
 }
 
 .images img {
     border-radius: var(--border_img);
-    width: 500px;
+    width: 400px;
 }
 
 .images img:nth-child(1) {
