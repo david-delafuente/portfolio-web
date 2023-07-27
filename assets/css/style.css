@@ -210,8 +210,10 @@ main {
 .window {
     width: 80%;
     padding: 40px;
+    margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.45);
     border-radius: var(--border_img);
+    position: relative;
 }
 
 .window p {
@@ -221,7 +223,7 @@ main {
 }
 
 .sticker {
-    position: relative;
+    position: absolute;
     top: -5%;
     left: 40%;
 }
@@ -279,7 +281,6 @@ main {
 
 .span_project_container {
     width: 90%;
-    margin: 50px 0px 50px 0px;
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--margin-general);
