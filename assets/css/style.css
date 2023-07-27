@@ -192,7 +192,6 @@ main {
 
 .p1 {
     text-align: justify;
-
 }
 
 .space_line {
@@ -218,7 +217,6 @@ main {
 .window p {
     font-family: 'Roboto';
     font-size: var(--text-size);
-    margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.817);
 }
 
@@ -233,7 +231,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+
 }
 
 .text_content p {
@@ -241,7 +239,6 @@ main {
 }
 
 .p1 {
-
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: var(--border_img);
@@ -315,26 +312,13 @@ main {
 }
 
 .images {
-    width: 90%;
+    opacity: 0.7;
 }
 
 .images img {
+    width: 500px;
     border-radius: var(--border_img);
-    width: 400px;
 }
-
-.images img:nth-child(1) {
-    float: right;
-    margin-bottom: var(--margin-general);
-
-}
-
-.images img:nth-child(2) {
-    float: left;
-    clear: both;
-
-}
-
 
 /* MAGIC BUTTON*/
 .button_container {
@@ -425,8 +409,9 @@ button p {
     --d: 45s;
     display: grid;
     justify-content: end;
+    align-items: center;
     overflow: hidden;
-    margin-top: 75px;
+
 }
 
 .gallery>img {
@@ -437,7 +422,6 @@ button p {
     animation: r var(--d) linear infinite;
     opacity: 1;
     transition: opacity 0.5s ease;
-    margin-top: var(--margin-general);
     border-radius: var(--border_img);
 }
 
