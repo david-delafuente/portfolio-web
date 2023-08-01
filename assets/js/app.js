@@ -11,40 +11,62 @@ function selectlang() {
     }
 }
 
+//Link to projects
+
+function linkToProject() {
+    back();
+    showElement2();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 //SHOW HIDDEN ELEMENTS
 
 //Global variables
 let varBody = document.body;
 let vartitle = document.getElementById('title')
 let varButtons = document.getElementById('buttons')
-let varWindow = document.getElementById('w1');
+let varWindow1 = document.getElementById('w1');
+let varWindow2 = document.getElementById('w2');
+
 
 function showElement1() {
     varBody.classList.add('image-blur');
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
 
-    let styleWindow = varWindow.style.display;
+    let styleWindow = varWindow1.style.display;
     if (styleWindow === 'none') {
-        varWindow.removeAttribute('style');
-        varWindow.classList.add('animate__fadeIn');
+        varWindow1.removeAttribute('style');
+        varWindow1.classList.add('animate__fadeIn');
     }
-    varWindow.classList.replace('animate__fadeOut', 'animate__fadeIn');
+    varWindow1.classList.replace('animate__fadeOut', 'animate__fadeIn');
+}
+function showElement2() {
+    varBody.classList.add('image-blur');
+    vartitle.style.display = 'none';
+    varButtons.style.display = 'none';
+
+    let styleWindow = varWindow2.style.display;
+    if (styleWindow === 'none') {
+        varWindow2.removeAttribute('style');
+        varWindow2.classList.add('animate__fadeIn');
+    }
+    varWindow2.classList.replace('animate__fadeOut', 'animate__fadeIn');
 }
 
 //continue here!!!!!!!!!!!!
 function back() {
-    document.body.classList.remove('image-blur');
-    document.getElementById('w1').style.display = 'none';
-    document.getElementById('title').removeAttribute('style');
-    document.getElementById('title').classList.add('animate__fadeIn');
+    varBody.classList.remove('image-blur');
+    varWindow1.style.display = 'none';
+    varWindow2.style.display = 'none';
 
-    document.getElementById('buttons').removeAttribute('style');
-    document.getElementById('buttons').classList.add('animate__fadeIn');
+    vartitle.removeAttribute('style');
+    vartitle.classList.add('animate__fadeIn');
 
-    document.getElementById('buttons').classList.replace('animate__fadeOut', 'animate__fadeIn');
-    document.getElementById('title').classList.replace('animate__fadeOut', 'animate__fadeIn');
+    varButtons.removeAttribute('style');
+    varButtons.classList.add('animate__fadeIn');
 
-    document.getElementById('back-button').classList.replace('animate__fadeIn', 'animate__fadeOut');
-    document.getElementById('w1').classList.replace('animate__fadeIn', 'animate__fadeOut');
 }
