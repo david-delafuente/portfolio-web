@@ -514,15 +514,8 @@ ion-icon {
 }
 
 
-
-
-
-
-
-
-
-
-
+/* PROJECTS*/
+/* SLIDER CARDS*/
 
 
 .slider {
@@ -540,21 +533,20 @@ ion-icon {
     justify-content: center;
     position: relative;
     min-height: 500px;
-    perspective: 1000px;
+    perspective: 3500px;
     overflow: hidden;
 }
 
 .testimonials .item {
     width: 600px;
-    height: 400px;
+    height: 500px;
     padding: 30px;
-    border-radius: 5px;
     background-color: #2f2f2f;
     position: absolute;
     top: 0;
     box-sizing: border-box;
     text-align: center;
-    transition: transform 0.4s;
+    transition: transform 0.8s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     user-select: none;
     cursor: pointer;
@@ -594,8 +586,8 @@ ion-icon {
 #t-3:checked~.dots label[for="t-3"],
 #t-4:checked~.dots label[for="t-4"],
 #t-5:checked~.dots label[for="t-5"] {
-    transform: scale(2);
-    background-color: #fff;
+    transform: scale(2.5);
+    background-color: white;
     box-shadow: 0px 0px 0px 3px #dddddd24;
 }
 
@@ -617,6 +609,8 @@ ion-icon {
 #t-5:checked~.testimonials label[for="t-2"] {
     transform: translate3d(600px, 0, -180px) rotateY(-25deg);
     z-index: 2;
+    opacity: 0.6;
+    height: 90%;
 }
 
 #t-1:checked~.testimonials label[for="t-2"],
@@ -624,8 +618,9 @@ ion-icon {
 #t-3:checked~.testimonials label[for="t-4"],
 #t-4:checked~.testimonials label[for="t-5"],
 #t-5:checked~.testimonials label[for="t-1"] {
-    transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+    transform: translate3d(900px, 0, -90px) rotateY(-15deg);
     z-index: 3;
+
 }
 
 #t-2:checked~.testimonials label[for="t-1"],
@@ -633,8 +628,9 @@ ion-icon {
 #t-4:checked~.testimonials label[for="t-3"],
 #t-5:checked~.testimonials label[for="t-4"],
 #t-1:checked~.testimonials label[for="t-5"] {
-    transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+    transform: translate3d(-900px, 0, -90px) rotateY(15deg);
     z-index: 3;
+
 }
 
 #t-3:checked~.testimonials label[for="t-1"],
@@ -643,6 +639,8 @@ ion-icon {
 #t-2:checked~.testimonials label[for="t-5"],
 #t-1:checked~.testimonials label[for="t-4"] {
     transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+    opacity: 0.6;
+    height: 90%;
 
 }
 
@@ -650,8 +648,6 @@ ion-icon {
 #t-2:checked~.testimonials label[for="t-2"],
 #t-3:checked~.testimonials label[for="t-3"],
 #t-4:checked~.testimonials label[for="t-4"],
-#t-5:checked~.testimonials label[for="t-4"],
 #t-5:checked~.testimonials label[for="t-5"] {
-
     z-index: 4;
 }
