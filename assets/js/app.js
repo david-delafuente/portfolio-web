@@ -30,6 +30,7 @@ let vartitle = document.getElementById('title')
 let varButtons = document.getElementById('buttons')
 let varWindow1 = document.getElementById('w1');
 let varWindow2 = document.getElementById('w2');
+let varWindow3 = document.getElementById('w3');
 
 
 function showElement1() {
@@ -56,12 +57,29 @@ function showElement2() {
     }
     varWindow2.classList.replace('animate__fadeOut', 'animate__fadeIn');
 }
+function showElement3() {
+    varBody.classList.add('image-blur');
+    vartitle.style.display = 'none';
+    varButtons.style.display = 'none';
 
-//continue here!!!!!!!!!!!!
+    let styleWindow = varWindow3.style.display;
+    if (styleWindow === 'none') {
+        varWindow3.removeAttribute('style');
+        varWindow3.classList.add('animate__fadeIn');
+    }
+    varWindow3.classList.replace('animate__fadeOut', 'animate__fadeIn');
+}
+
+
 function back() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
     varBody.classList.remove('image-blur');
     varWindow1.style.display = 'none';
     varWindow2.style.display = 'none';
+    varWindow3.style.display = 'none';
 
     vartitle.removeAttribute('style');
     vartitle.classList.add('animate__fadeIn');

@@ -276,12 +276,6 @@ main {
     margin-top: 100px;
 }
 
-.sticker {
-    position: absolute;
-    top: -4%;
-    left: 40%;
-}
-
 .window {
     width: 80%;
     padding: 40px;
@@ -400,9 +394,14 @@ p.clear {
 
 ion-icon {
     cursor: pointer;
-
     width: 48px;
     height: 48px;
+}
+
+.icon_form {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -650,4 +649,82 @@ ion-icon {
 #t-4:checked~.testimonials label[for="t-4"],
 #t-5:checked~.testimonials label[for="t-5"] {
     z-index: 4;
+}
+
+/* CONTACT ME */
+/* FORM */
+
+#w3 {
+    width: 400px;
+}
+
+.form_window {
+    padding: 50px 25px 0px 25px;
+}
+
+.sticker {
+    position: absolute;
+    top: -20%;
+    left: 37%;
+    width: 110px;
+}
+
+.contact_form {
+    font-family: var(--font-title);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_form div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_form div input {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border: none
+}
+
+.contact_form div textarea {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-size: 14px;
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border: none
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    box-shadow: 0 0 5px var(--primary-color);
+    outline: none;
+}
+
+.field_button button {
+    color: var(--text-color);
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: var(--font-title);
+    background-color: rgba(255, 136, 0, 0.3);
+    border: none;
+    transition: width 0.5s, background-color 0.5s;
+}
+
+.field_button button:hover {
+    width: 75%;
+    background-color: rgba(255, 136, 0, 0.577);
+    transition: 0.5s;
 }

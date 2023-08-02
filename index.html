@@ -67,7 +67,6 @@
 
             <!-- About me-->
             <section class="window animate__animated" id="w1" style="display: none;">
-                <img class="sticker" src="assets/icons/apple-touch-icon.png" loading="lazy" />
                 <h2 class="section_title">De operario a desarrollador<span class="dot">.</span></h2>
 
                 <div class="text_content">
@@ -281,13 +280,38 @@
                 </div>
             </div>
 
-
             <!-- Contact me-->
+            <section class="window animate__animated form_window" id="w3" style="display: none;">
+                <img class="sticker" src="assets/icons/apple-touch-icon.png" loading="lazy" />
+                <form class="contact_form" action="">
+                    <div class="field_name">
+                        <label for="name" class="input_form">Nombre<span class="required dot">*</span></label>
+                        <input type="text" class="form-control" name="name" access="false" maxlength="100" id="name"
+                            required="required" aria-required="true">
+                    </div>
+                    <div class="field_mail">
+                        <label for="mail" class="input_form">Correo electrónico<span
+                                class="required dot">*</span></label>
+                        <input type="email" class="form-control" access="false" maxlength="50" id="control-4327475"
+                            required="required" aria-required="true" name="mail">
+                    </div>
+                    <div class="field-message">
+                        <label for="message" class="input_form">
+                            <span>Déjame un mensaje</span></label><textarea type="
+                                textarea " class=" form_message " name=" message " access=" false " maxlength="
+                                250 " id=" message " aria-required=" true "></textarea>
+                    </div>
+                    <div class="field_button"><button type=" submit " class=" btn-primary
+                                btn " name=" button " access=" false" id=" button ">Enviar</button>
+                    </div>
+                </form>
+                <!-- Back button-->
+                <div class=" button_container animate__animated">
+                    <ion-icon class="icon_form" name="arrow-back-circle-outline" id="back_button"
+                        onclick="back()"></ion-icon>
+                </div>
+            </section>
 
-            <!-- Back button-->
-            <div class="back_btn_container" style="display: none;">
-                <ion-icon name="play-back-outline" class="back_btn" id="back-button" onclick="back()"></ion-icon>
-            </div>
     </main>
 
     <!-- FOOTER-->
