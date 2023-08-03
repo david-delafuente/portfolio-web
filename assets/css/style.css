@@ -534,6 +534,9 @@ ion-icon {
     min-height: 500px;
     perspective: 3500px;
     overflow: hidden;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .testimonials .item {
@@ -550,6 +553,8 @@ ion-icon {
     user-select: none;
     cursor: pointer;
     border-radius: var(--border_img);
+
+    scroll-snap-align: start;
 }
 
 .testimonials .item h3 {
