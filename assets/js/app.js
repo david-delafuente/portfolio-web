@@ -22,6 +22,19 @@ function linkToProject() {
     });
 }
 
+//Social media animations
+
+function animation() {
+    let varIcon = document.getElementById('social_media_icons');
+
+    varIcon.classList.add('animate__rubberBand');
+
+    // Escuchar el evento 'animationend' para quitar la clase de animación después de que termine
+    varIcon.addEventListener('animationend', function () {
+        varIcon.classList.remove('animate__rubberBand');
+    });
+}
+
 //SHOW HIDDEN ELEMENTS
 
 //Global variables

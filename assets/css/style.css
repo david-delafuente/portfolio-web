@@ -47,19 +47,11 @@ hr {
     width: 100%;
 }
 
-li {
-    color: rgb(255, 132, 0);
-}
-
 a {
     color: rgb(255, 132, 0);
     text-decoration: none;
     font-size: 30px;
     cursor: pointer;
-}
-
-.li_text {
-    color: white;
 }
 
 .dot {
@@ -502,6 +494,21 @@ ion-icon {
 
 }
 
+/* SOCIAL MEDIA */
+.social_container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.social_container img {
+    width: 48px;
+}
+
+
 /* FOOTER */
 
 .footer_container {
@@ -511,7 +518,6 @@ ion-icon {
     color: var(--bg-color);
     padding: 20px;
 }
-
 
 /* PROJECTS*/
 /* SLIDER CARDS*/
