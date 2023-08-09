@@ -495,7 +495,7 @@ ion-icon {
 }
 
 /* SOCIAL MEDIA */
-.social_container {
+#social_container {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -504,7 +504,7 @@ ion-icon {
     z-index: 1000;
 }
 
-.social_container img {
+#social_container img {
     width: 48px;
 }
 

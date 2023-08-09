@@ -11,6 +11,24 @@ function selectlang() {
     }
 }
 
+//Animations for text projects
+window.addEventListener('scroll', function () {
+    var projectTextElements = document.querySelectorAll('.project_text');
+    var delay = 0;
+
+    projectTextElements.forEach(function (element) {
+        var rect = element.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            setTimeout(function () {
+                element.classList.add('animate__fadeInRightBig');
+            }, delay);
+
+            delay += 500;
+        }
+    });
+});
+
 //Link to projects
 
 function linkToProject() {
@@ -24,16 +42,18 @@ function linkToProject() {
 
 //Social media animations
 
-function animation() {
-    let varIcon = document.getElementById('social_media_icons');
+const socialLinks = document.querySelectorAll('.social_link');
 
-    varIcon.classList.add('animate__rubberBand');
-
-    // Escuchar el evento 'animationend' para quitar la clase de animación después de que termine
-    varIcon.addEventListener('animationend', function () {
-        varIcon.classList.remove('animate__rubberBand');
+socialLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.querySelector('.social_icon').classList.add('animate__rubberBand');
     });
-}
+
+    link.addEventListener('mouseleave', () => {
+        link.querySelector('.social_icon').classList.remove('animate__rubberBand');
+    });
+});
+
 
 //SHOW HIDDEN ELEMENTS
 
@@ -44,12 +64,14 @@ let varButtons = document.getElementById('buttons')
 let varWindow1 = document.getElementById('w1');
 let varWindow2 = document.getElementById('w2');
 let varWindow3 = document.getElementById('w3');
+let varSocialMedia = document.getElementById('social_container');
 
 
 function showElement1() {
     varBody.classList.add('image-blur');
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
+    varSocialMedia.style.display = 'none';
 
     let styleWindow = varWindow1.style.display;
     if (styleWindow === 'none') {
@@ -62,6 +84,7 @@ function showElement2() {
     varBody.classList.add('image-blur');
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
+    varSocialMedia.style.display = 'none';
 
     let styleWindow = varWindow2.style.display;
     if (styleWindow === 'none') {
@@ -74,6 +97,7 @@ function showElement3() {
     varBody.classList.add('image-blur');
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
+    varSocialMedia.style.display = 'none';
 
     let styleWindow = varWindow3.style.display;
     if (styleWindow === 'none') {
@@ -99,5 +123,8 @@ function back() {
 
     varButtons.removeAttribute('style');
     varButtons.classList.add('animate__fadeIn');
+
+    varSocialMedia.removeAttribute('style');
+    varSocialMedia.classList.add('animate__fadeIn');
 
 }
