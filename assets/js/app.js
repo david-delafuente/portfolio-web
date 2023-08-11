@@ -17,8 +17,8 @@ function linkToProject() {
     back();
     showElement2();
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+        top: 150,
+        behavior: "smooth"
     });
 }
 
@@ -36,9 +36,7 @@ socialLinks.forEach(link => {
     });
 });
 
-
 //SHOW HIDDEN ELEMENTS
-
 //Global variables
 let varBody = document.body;
 let vartitle = document.getElementById('title')
