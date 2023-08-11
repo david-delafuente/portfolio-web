@@ -11,24 +11,6 @@ function selectlang() {
     }
 }
 
-//Animations for text projects
-window.addEventListener('scroll', function () {
-    var projectTextElements = document.querySelectorAll('.project_text');
-    var delay = 0;
-
-    projectTextElements.forEach(function (element) {
-        var rect = element.getBoundingClientRect();
-
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            setTimeout(function () {
-                element.classList.add('animate__fadeInRightBig');
-            }, delay);
-
-            delay += 500;
-        }
-    });
-});
-
 //Link to projects
 
 function linkToProject() {
