@@ -48,7 +48,7 @@ let varSocialMedia = document.getElementById('social_container');
 
 
 function showElement1() {
-    varBody.classList.add('image-blur');
+    //varBody.classList.add('image-blur');
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
     varSocialMedia.style.display = 'none';
