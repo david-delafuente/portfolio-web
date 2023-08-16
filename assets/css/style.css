@@ -743,6 +743,17 @@ button:focus {
 
 @media (max-width: 480px) {
 
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+        background-image: url("../images/background-desktop.jpg");
+        background-size: cover;
+        background-position: center bottom;
+        height: 100vh;
+    }
+
     /* Home */
     .main_title h1 {
         margin: 50px 20px 50px 20px;
@@ -848,5 +859,10 @@ button:focus {
 
     }
 
+    ion-icon {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
 
 }
