@@ -1,15 +1,15 @@
 //LANGUAGE BUTTON
 
-let lang_button = document.getElementById('language-toggle');
-lang_button.addEventListener('click', selectlang);
+/* let lang_button = document.getElementById('language-toggle');
+lang_button.addEventListener('click', selectlang); */
 
-/* function selectlang() {
+function selectlang() {
     if (lang_button.checked == true) {
         location.href = 'ES/es-index.html';
     } else {
         location.href = '../index.html';
     }
-} */
+}
 
 //Link to projects
 
