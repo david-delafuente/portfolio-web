@@ -847,8 +847,9 @@ button:focus {
     }
 
     .gallery>img {
-        grid-area: 1/1;
-        height: 100px;
+        width: 100%;
+        /* Ajustar el ancho de las imágenes */
+        height: auto;
         aspect-ratio: 1.5;
         object-fit: cover;
         animation: r var(--d) linear infinite;
