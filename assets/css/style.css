@@ -749,7 +749,7 @@ button:focus {
         min-height: 100vh;
         padding: 20px;
         background-image: url("../images/background-desktop.jpg");
-        background-size: auto;
+        background-size: cover;
         background-position: center bottom;
         height: 100vh;
     }
