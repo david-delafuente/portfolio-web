@@ -749,9 +749,6 @@ button:focus {
         flex-direction: column;
     }
 
-    #social_container img {
-        width: 30px;
-    }
 
     .footer_content {
         display: flex;
