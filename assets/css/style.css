@@ -35,7 +35,6 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     padding: 20px;
     background-image: url("../images/background-desktop.jpg");
     background-size: cover;
@@ -744,8 +743,12 @@ button:focus {
 @media (max-width: 480px) {
 
     body {
+
+        padding: 20px;
         background-image: url("../images/background-desktop.jpg");
         background-size: cover;
+        background-attachment: fixed;
+
     }
 
     /* Home */
