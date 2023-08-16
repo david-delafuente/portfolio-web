@@ -744,14 +744,8 @@ button:focus {
 @media (max-width: 480px) {
 
     body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 20px;
         background-image: url("../images/background-desktop.jpg");
         background-size: cover;
-        background-position: center bottom;
-        height: 100vh;
     }
 
     /* Home */
