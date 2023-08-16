@@ -167,6 +167,7 @@ button p {
     font-size: 15px;
 }
 
+
 .glow-on-hover {
     width: 200px;
     height: 50px;
@@ -199,6 +200,7 @@ button p {
 
 .glow-on-hover:active {
     color: rgb(0, 0, 0);
+
 }
 
 .glow-on-hover:active:after {
@@ -220,6 +222,7 @@ button p {
     top: 0;
     border-radius: 15px;
 }
+
 
 @keyframes glowing {
     0% {
@@ -740,7 +743,7 @@ button:focus {
 @media (max-width: 480px) {
     .main_title h1 {
         margin: 50px 20px 50px 20px;
-        font-size: 23px;
+        font-size: 30px;
         font-family: var(--font-title);
         color: rgb(255, 255, 255);
     }
