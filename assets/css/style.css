@@ -153,6 +153,17 @@ input.check-toggle-round-flat:checked+label:after {
 
 /* HOME */
 /* MAGIC BUTTON*/
+
+.button_container_about {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+    margin: 10px 0px;
+}
+
+
 .button_container {
     width: auto;
     display: flex;
@@ -160,6 +171,10 @@ input.check-toggle-round-flat:checked+label:after {
     justify-content: center;
     gap: 30px;
     margin: 40px 0px 20px 0px;
+}
+
+.back_about {
+    align-items: right;
 }
 
 button p {
