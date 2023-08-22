@@ -45,6 +45,7 @@ let varWindow1 = document.getElementById('w1');
 let varWindow2 = document.getElementById('w2');
 let varWindow3 = document.getElementById('w3');
 let varSocialMedia = document.getElementById('social_container');
+let varMutliLang = document.getElementById('LangSwitch');
 
 
 function showElement1() {
@@ -77,6 +78,7 @@ function showElement3() {
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
     varSocialMedia.style.display = 'none';
+    varMutliLang.style.display = 'none';
 
     let styleWindow = varWindow3.style.display;
     if (styleWindow === 'none') {
@@ -105,5 +107,8 @@ function back() {
 
     varSocialMedia.removeAttribute('style');
     varSocialMedia.classList.add('animate__fadeIn');
+
+    varMutliLang.removeAttribute('style');
+    varMutliLang.classList.add('animate__fadeIn');
 
 }
