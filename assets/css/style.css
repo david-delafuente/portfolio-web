@@ -783,9 +783,7 @@ button:focus {
     }
 
     .window p {
-        font-family: 'Roboto';
         font-size: var(--text-size-mobile);
-        color: rgba(255, 255, 255, 0.817);
     }
 
     .text_content p {
@@ -794,7 +792,6 @@ button:focus {
 
     .images img {
         width: 100%;
-        border-radius: var(--border_img);
         margin: 30px 0;
     }
 
@@ -842,23 +839,19 @@ button:focus {
 
     .gallery {
         margin-bottom: 15px;
-
     }
 
     .gallery>img {
         width: 100%;
         height: auto;
-
     }
 
     ion-icon {
-        cursor: pointer;
         width: 35px;
         height: 35px;
     }
 
     /* FORM */
-
     #w3 {
         width: 80%;
     }
