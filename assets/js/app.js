@@ -52,6 +52,7 @@ function showElement1() {
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
     varSocialMedia.style.display = 'none';
+    varMutliLang.style.display = 'none';
 
     let styleWindow = varWindow1.style.display;
     if (styleWindow === 'none') {
@@ -65,6 +66,7 @@ function showElement2() {
     vartitle.style.display = 'none';
     varButtons.style.display = 'none';
     varSocialMedia.style.display = 'none';
+    varMutliLang.style.display = 'none';
 
     let styleWindow = varWindow2.style.display;
     if (styleWindow === 'none') {
