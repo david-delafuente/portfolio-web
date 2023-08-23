@@ -884,7 +884,7 @@ button:focus {
         align-items: center;
         justify-content: center;
         position: relative;
-        height: 500px;
+        min-height: 500px;
         perspective: 50px;
         overflow: hidden;
     }
