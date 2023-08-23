@@ -884,7 +884,7 @@ button:focus {
         align-items: center;
         justify-content: center;
         position: relative;
-        height: 50px;
+        height: 500px;
         perspective: 50px;
         overflow: hidden;
     }
@@ -1031,8 +1031,6 @@ button:focus {
         left: 37%;
         width: 80px;
     }
-
-
 
     .field_button button {
         margin-top: 15px;
