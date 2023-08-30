@@ -1,7 +1,7 @@
 //LANGUAGE BUTTON
 
-/* let lang_button = document.getElementById('language-toggle');
-lang_button.addEventListener('click', selectlang); */
+let lang_button = document.getElementById('language-toggle');
+lang_button.addEventListener('click', selectlang);
 
 function selectlang() {
     if (lang_button.checked == true) {
@@ -112,5 +112,6 @@ function back() {
 
     varMutliLang.removeAttribute('style');
     varMutliLang.classList.add('animate__fadeIn');
+
 
 }
