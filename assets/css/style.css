@@ -758,7 +758,7 @@ button:focus {
     body {
         padding: 20px;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: initial;
 
     }
 
@@ -852,7 +852,9 @@ button:focus {
 
     .gallery {
         margin-bottom: 15px;
+        width: 100%;
     }
+
 
     .gallery>img {
         width: 100%;
