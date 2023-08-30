@@ -758,7 +758,7 @@ button:focus {
     body {
         padding: 20px;
         background-size: cover;
-        background-attachment: initial;
+        background-attachment: scroll;
 
     }
 
