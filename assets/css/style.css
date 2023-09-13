@@ -50,7 +50,7 @@ hr {
 a {
     color: rgb(255, 132, 0);
     text-decoration: none;
-    font-size: var(--text-size-mobile) !important;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -799,6 +799,11 @@ button:focus {
         background-size: cover;
         background-attachment: fixed;
     }
+
+    a {
+        font-size: 20px !important;
+    }
+
 
     /* Home */
     .main_title h1 {
