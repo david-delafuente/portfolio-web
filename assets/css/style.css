@@ -753,7 +753,7 @@ button:focus {
 
 /* RESPONSIVE TABLET */
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (max-width: 900px) {
 
     .project_text {
         display: block;
