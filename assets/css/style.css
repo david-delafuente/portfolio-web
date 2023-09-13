@@ -50,7 +50,7 @@ hr {
 a {
     color: rgb(255, 132, 0);
     text-decoration: none;
-    font-size: 30px;
+    font-size: var(--text-size-mobile) !important;
     cursor: pointer;
 }
 
@@ -770,6 +770,9 @@ button:focus {
     p.small {
         width: 75%;
     }
+
+    /*Link to projects*/
+
 
     /* Projects */
     .slider {
