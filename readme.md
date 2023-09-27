@@ -11,14 +11,14 @@
 ### General Info
 ***
 This is my personal portfolio web, to show the world my skills, and my interests, and know a few more about me.
-I've decided to create this site manually, without libraries or frameworks to help me. This decision was for showing my capacity with different technologies.
+I've decided to create this site manually, without libraries or frameworks to help me. This decision was to show my capacity with different technologies.
 This site is deployed in Netlify, and the mail server used is Convertkit.
 Some projects I can't show you because they are private, only explain basic concepts about.
 
 <!-- 
 ### Screenshot
 ***
-Example to insert images
+Example of inserting images
 ![Image text](https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg)
 -->
 
@@ -52,7 +52,7 @@ $ npm start
 
 2. __The style of the project is copied?__
 
-   _No, I decided this style inspired by different webs that I've seen working and developing websites, using new tendencies and trying to create a clear website, easy to navigate_.
+   _No, I decided this style inspired by different websites that I've seen working and developing websites, using new tendencies and trying to create a clear website, easy to navigate_.
    
 3. __How does the form use the data of users who want to contact you?__
 
